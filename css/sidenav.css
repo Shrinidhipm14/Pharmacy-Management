@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+  background-color: #f1f3f6;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Sidebar Container */
+.sidenav {
+  width: 15%;
+  height: 100vh;
+  background: linear-gradient(180deg, #0f0f0f 0%, #1c1c1c 100%);
+  position: fixed;
+  z-index: 10;
+  overflow-y: auto;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Sidebar Inner Card */
+.card {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  border-radius: 0;
+  background-color: transparent;
+  border: none;
+}
+
+/* Logo Styling */
+.logo .logo-caption {
+  font-family: 'Poiret One', cursive;
+  color: #ffffff;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  padding-top: 15px;
+}
+
+.logo .profile {
+  margin-left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%);
+  width: 80px;
+  height: 80px;
+  border: 3px solid #ff5252;
+}
+
+/* Highlighted Letter */
+.logo .tweak {
+  color: #ff5252;
+  font-weight: bold;
+}
+
+/* Menu Item Styles */
+.main-menu-item {
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  border-left: 3px solid transparent;
+}
+
+.main-menu-item:hover {
+  background-color: #1e1e1e;
+  border-left: 3px solid #ff5252;
+}
+
+.main-menu-item > a {
+  color: #eeeeee;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main-menu-item:hover > a {
+  color: #ff5252;
+}
+
+/* Submenu */
+.treeview-menu {
+  margin-left: 10px;
+  margin-top: 8px;
+  padding-left: 10px;
+  border-left: 1px dashed #444;
+}
+
+.treeview-menu .treeview {
+  display: block;
+  margin: 5px 0;
+}
+
+.treeview-menu .treeview a {
+  color: #cccccc;
+  font-size: 13px;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.treeview-menu .treeview a:hover {
+  color: #ff5252;
+  background-color: rgba(255, 82, 82, 0.05);
+  border-radius: 4px;
+}
+
+/* Icons and spacing */
+.main-menu-item > a > span {
+  margin-left: 8px;
+}
+
+/* Button inside sidebar */
+.menu-list .btn {
+  background: none;
+  color: #ffffff;
+  text-align: left;
+  font-size: 0.95em;
+  width: 100%;
+  border: none;
+  padding: 10px 15px;
+  transition: color 0.2s ease;
+}
+
+.menu-list .btn:hover {
+  color: #ff5252;
+}
+
+/* Sidebar Footer */
+.footer {
+  padding: 10px;
+  margin-left: 15%;
+  width: 85%;
+  background: #111111;
+  position: relative;
+  bottom: 0;
+  z-index: 1;
+  color: #ccc;
+  text-align: center;
+  font-size: 13px;
+}

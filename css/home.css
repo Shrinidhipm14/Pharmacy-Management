@@ -1,0 +1,160 @@
+html, body {
+  height: 100vh;
+  background-color: #f9fbfd;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.container-fluid {
+  margin-left: 15%;
+  width: 85%;
+  background: #f9fbfd;
+  padding: 1px 0 0 0;
+  flex: 1 0 auto;
+}
+
+.container {
+  margin: 1% auto;
+  max-width: 98%;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+}
+
+.user_options button {
+  max-width: 50px;
+  max-height: 50px;
+  font-size: 26px;
+  background-color: transparent;
+  color: #ff4b4b;
+  border: none;
+  outline: none;
+  transition: transform 0.3s ease;
+}
+
+.user_options button > i:hover {
+  animation: rotate_wheel 1.5s linear infinite;
+  color: #02b6ff;
+}
+
+@keyframes rotate_wheel {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.user_options button:focus {
+  color: #007bff;
+}
+
+#mark {
+  display: none;
+  position: fixed;
+  transform: translate(40px, -24px);
+}
+
+.user_options .options {
+  position: fixed;
+  right: 1%;
+  top : 12%;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  padding: 10px 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+.options li {
+  margin: 10px 0;
+}
+
+.options li > a {
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.options li > a > span {
+  margin-left: 8px;
+}
+
+.options a:hover {
+  color: #ff4b4b;
+  font-weight: bold;
+}
+
+.options a:focus {
+  color: #00b7ff;
+}
+
+/* Dashboard Cards */
+.dashboard-stats {
+  background: #ffffff;
+  border: 1px solid #00b7ff;
+  border-left: 5px solid #00b7ff;
+  margin: 2%;
+  padding: 15px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.dashboard-stats:hover {
+  background: #f0fbff;
+  transform: scale(1.01);
+}
+
+.todays-report {
+  margin: 2% 0;
+  padding: 5%;
+  border-radius: 6px;
+  background: #fff8f8;
+  border: 1px solid #ff4b4b;
+}
+
+/* Modal Styling */
+#add_new_customer_model,
+#add_new_supplier_model,
+#add_new_medicine_model {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(0,0,0,0.5);
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal-dialog {
+  position: fixed;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Input Cleanup */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff4b4b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d63031;
+}
